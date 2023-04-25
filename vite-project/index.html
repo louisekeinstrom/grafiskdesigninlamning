@@ -22,10 +22,14 @@
       </div>
       <div id="menu">
         <p id="menutext">
-          DU ÄR HÄR: <i class="fa-solid fa-house" style="color: #000000"> </i>
+          DU ÄR HÄR:
+          <a href="#">
+            <i class="fa-solid fa-house" style="color: #000000"> </i
+          ></a>
           <i class="fa-solid fa-greater-than" style="color: #000000"> </i>
-          ANMÄLAN
-          <i class="fa-solid fa-greater-than" style="color: #000000"> </i> NATUR
+          <a href="#">ANMÄLAN</a>
+          <i class="fa-solid fa-greater-than" style="color: #000000"> </i>
+          <a href="#">NATUR</a>
         </p>
       </div>
     </nav>
@@ -38,32 +42,38 @@
         <input id="name" type="text" placeholder="Namn" required />
         <input id="phone" type="text" placeholder="Telefonnummer" required />
         <input id="text" type="text" placeholder="Skriv här..." required />
+        <button id="submit" type="submit">SKICKA</button>
       </div>
-      <button id="submit" type="submit">SKICKA</button>
-      <div id="article1">
-        <div>
-          <!-- <img class="person1" src="./images/Person 1.png" alt="" /> -->
-          <h3>Orolig över träd?</h3>
-          <p>
-            Läs mer här
-            <i
-              class="fa-solid fa-arrow-up-right-from-square"
-              style="color: #000000"
-            ></i>
-          </p>
+      <div class="articles">
+        <div id="article1">
+          <img class="articleImg" src="./images/Person 1.png" alt="" />
+          <div>
+            <h3>Orolig över träd?</h3>
+            <p>
+              <a href="#">
+                Läs mer här
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </p>
+          </div>
         </div>
-      </div>
-      <div id="article2">
-        <div>
-          <!-- <img class="person1" src="./images/Person 1.png" alt="" /> -->
-          <h3>Orolig över träd?</h3>
-          <p>
-            Läs mer här
-            <i
-              class="fa-solid fa-arrow-up-right-from-square"
-              style="color: #000000"
-            ></i>
-          </p>
+        <div id="article2">
+          <img class="articleImg" src="./images/träd.png" alt="" />
+          <div>
+            <h3>Orolig över träd?</h3>
+            <p>
+              <a href="#">
+                Läs mer här
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -76,7 +86,7 @@
         <h2>Funderingar?</h2>
         <p>Kontakta oss här:</p>
       </div>
-      <!-- <img class="person2" src="./images/person 2.png" alt="" /> -->
+      <img class="person2" src="./images/person 2.png" alt="" />
       <div id="footerimage"></div>
     </footer>
     <script type="module" src="/src/main.ts"></script>

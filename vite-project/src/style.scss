@@ -2,6 +2,16 @@
   font-family: 'Roboto', sans-serif;
   padding: 0px;
   margin: 0px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  width: 100%;
 }
 
 #logo {
@@ -14,8 +24,8 @@
   align-items: center;
   background-image: url("../images/cornerdecoration.png");
   background-repeat: no-repeat;
-  background-position: 200px -50px;
-  background-size: 300px ;
+  background-position: right;
+  background-size: 30%;
     
   > div {
       display: flex;
@@ -40,20 +50,13 @@
       z-index: 9;
       width: 80px;
     }
-  
-  #cornerdecoration{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    height: 150px;
-    width: 150px;
-  }
 }
 
 #menu {
   background-color: #D9D9D9;
   height: 50px;
   align-items: center;
+  width: 100%;
 
   .fa-house{
     padding: 0px 4px;
@@ -74,7 +77,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/pexels-jonathan-petersson-1076180.jpg");
+  background-image:linear-gradient(90deg, #33333388 0%, #33333388 100%), url("../images/pexels-jonathan-petersson-1076180.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -99,6 +102,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 40px;
 
     #name{
       width: 300px;
@@ -117,6 +122,7 @@ main {
       padding: 5px;
       height: 200px;
       margin: 5px;
+      width: 300px;
       
     }
 
@@ -139,11 +145,55 @@ main {
 
 }
 
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  margin: 20px;
+  padding: 20px;
+  justify-content: space-around;
+  width: 200px;
+}
+
+
+.articleImg {
+  height: 120px;
+  transform: scaleX(-1);
+  width: 120px;
+}
+
+#article1, #article2 {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 200px;
+  padding: 20px;
+  border-left: purple 10px solid;
+  align-items: start;
+  margin: 10px;
+  background-color: #6F6E67;
+
+  div {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    text-align: start;
+    flex-direction: column;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+} 
+
 footer {
   display: flex;
+  flex-direction: column;
   background-color: #6F6E67;
   color: #FFFF;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 
   > div {
@@ -169,4 +219,8 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
   }
+}
+
+.person2 {
+  height: 200px;
 }
